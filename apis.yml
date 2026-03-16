@@ -1,4 +1,4 @@
-name: SUMIF API
+name: SUMIF
 description: API for conditional sum operations across datasets
 image: https://example.com/sumif-logo.png
 url: https://api.example.com/sumif
