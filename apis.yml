@@ -4,11 +4,11 @@ description: >-
 image: https://example.com/sumif-logo.png
 url: https://api.example.com/sumif
 tags:
-  - spreadsheet
-  - calculation
-  - conditional
-  - aggregation
-  - data analysis
+  - Aggregation
+  - Calculation
+  - Conditional
+  - Data Analysis
+  - Spreadsheet
 created: '2024-01-15'
 modified: '2026-03-16'
 apis:
@@ -20,9 +20,9 @@ apis:
     baseURL: https://api.example.com/v1
     version: '1.0'
     tags:
-      - sum
-      - conditional
-      - filtering
+      - Conditional
+      - Filtering
+      - Sum
     properties:
       - type: Documentation
         url: https://docs.example.com/sumif/reference
