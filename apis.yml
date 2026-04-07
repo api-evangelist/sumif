@@ -1,104 +1,106 @@
 name: SUMIF
-description: API for conditional sum operations across datasets
+description: >-
+  API for conditional sum operations across datasets.
 image: https://example.com/sumif-logo.png
 url: https://api.example.com/sumif
 tags:
-- spreadsheet
-- calculation
-- conditional
-- aggregation
-- data analysis
+  - spreadsheet
+  - calculation
+  - conditional
+  - aggregation
+  - data analysis
 created: '2024-01-15'
 modified: '2026-03-16'
 apis:
-- name: SUMIF API
-  description: Performs conditional summation based on specified criteria
-  image: https://example.com/sumif-api.png
-  humanURL: https://docs.example.com/sumif
-  baseURL: https://api.example.com/v1
-  version: '1.0'
-  tags:
-  - sum
-  - conditional
-  - filtering
-  properties:
-  - type: Documentation
-    url: https://docs.example.com/sumif/reference
-  - type: OpenAPI
-    url: https://api.example.com/openapi/sumif.json
-  - type: Swagger
-    url: https://api.example.com/swagger/sumif
-  - type: Postman Collection
-    url: https://www.postman.com/collections/sumif-api
-  - type: Authentication
-    url: https://docs.example.com/sumif/authentication
-  - type: Pricing
-    url: https://example.com/pricing
-  - type: Rate Limits
-    url: https://docs.example.com/sumif/rate-limits
-  - type: Status
-    url: https://status.example.com
-  - type: Support
-    url: https://support.example.com
-  - type: Terms of Service
-    url: https://example.com/terms
-  - type: Privacy Policy
-    url: https://example.com/privacy
-  contact:
-  - type: Email
-    url: mailto:api@example.com
-  - type: Twitter
-    url: https://twitter.com/exampleapi
-  - type: Support
-    url: https://support.example.com/contact
-  endpoints:
-  - name: Basic SUMIF
-    description: Sum values based on a single condition
-    method: POST
-    path: /sumif
-    parameters:
-    - name: range
-      type: array
-      required: true
-      description: Array of values to evaluate
-    - name: criteria
-      type: string
-      required: true
-      description: Condition to match (e.g., ">100", "=Active")
-    - name: sum_range
-      type: array
-      required: false
-      description: Array of values to sum (uses range if not specified)
-  - name: SUMIFS (Multiple Criteria)
-    description: Sum values based on multiple conditions
-    method: POST
-    path: /sumifs
-    parameters:
-    - name: sum_range
-      type: array
-      required: true
-      description: Array of values to sum
-    - name: criteria_ranges
-      type: array
-      required: true
-      description: Array of ranges to evaluate
-    - name: criteria
-      type: array
-      required: true
-      description: Array of conditions to match
-  - name: Batch SUMIF
-    description: Process multiple SUMIF operations in a single request
-    method: POST
-    path: /sumif/batch
-    parameters:
-    - name: operations
-      type: array
-      required: true
-      description: Array of SUMIF operation objects
+  - name: SUMIF API
+    description: >-
+      Performs conditional summation based on specified criteria.
+    image: https://example.com/sumif-api.png
+    humanURL: https://docs.example.com/sumif
+    baseURL: https://api.example.com/v1
+    version: '1.0'
+    tags:
+      - sum
+      - conditional
+      - filtering
+    properties:
+      - type: Documentation
+        url: https://docs.example.com/sumif/reference
+      - type: OpenAPI
+        url: https://api.example.com/openapi/sumif.json
+      - type: Swagger
+        url: https://api.example.com/swagger/sumif
+      - type: Postman Collection
+        url: https://www.postman.com/collections/sumif-api
+      - type: Authentication
+        url: https://docs.example.com/sumif/authentication
+      - type: Pricing
+        url: https://example.com/pricing
+      - type: Rate Limits
+        url: https://docs.example.com/sumif/rate-limits
+      - type: Status
+        url: https://status.example.com
+      - type: Support
+        url: https://support.example.com
+      - type: Terms of Service
+        url: https://example.com/terms
+      - type: Privacy Policy
+        url: https://example.com/privacy
+    contact:
+      - type: Email
+        url: mailto:api@example.com
+      - type: Twitter
+        url: https://twitter.com/exampleapi
+      - type: Support
+        url: https://support.example.com/contact
+    endpoints:
+      - name: Basic SUMIF
+        description: Sum values based on a single condition
+        method: POST
+        path: /sumif
+        parameters:
+          - name: range
+            type: array
+            required: true
+            description: Array of values to evaluate
+          - name: criteria
+            type: string
+            required: true
+            description: Condition to match (e.g., ">100", "=Active")
+          - name: sum_range
+            type: array
+            required: false
+            description: Array of values to sum (uses range if not specified)
+      - name: SUMIFS (Multiple Criteria)
+        description: Sum values based on multiple conditions
+        method: POST
+        path: /sumifs
+        parameters:
+          - name: sum_range
+            type: array
+            required: true
+            description: Array of values to sum
+          - name: criteria_ranges
+            type: array
+            required: true
+            description: Array of ranges to evaluate
+          - name: criteria
+            type: array
+            required: true
+            description: Array of conditions to match
+      - name: Batch SUMIF
+        description: Process multiple SUMIF operations in a single request
+        method: POST
+        path: /sumif/batch
+        parameters:
+          - name: operations
+            type: array
+            required: true
+            description: Array of SUMIF operation objects
 maintainers:
-- name: API Team
-  email: api-team@example.com
-  url: https://example.com/team
+  - name: API Team
+    email: api-team@example.com
+    url: https://example.com/team
 include:
-- name: Related APIs
-  url: https://api.example.com/apis.json
+  - name: Related APIs
+    url: https://api.example.com/apis.json
