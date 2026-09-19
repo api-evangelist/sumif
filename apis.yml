@@ -30,6 +30,10 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sumif.png
 tags:
   - Data Analytics
+  - Spreadsheets
+  - Calculation
+tags_raw:
+  - Data Analytics
   - Spreadsheet
   - Calculation
 url: >-
